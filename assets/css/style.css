@@ -12565,6 +12565,34 @@ footer .social-icon-circle a:hover {
 }
 /* ====================== [ End 80x240 Styles ] ====================== */
 
+/* ====================== [ Start 1200x2800 Styles ] ====================== */
+.img-1200x2800 {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-1200x2800:hover {
+    transform: scale(1.05);
+}
+/* ====================== [ End 1200x2800 Styles ] ====================== */
+
+
+/* ====================== [ Start 1200x2400 Styles ] ====================== */
+.img-1200x2400 {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-1200x2400:hover {
+    transform: scale(1.05);
+}
+/* ====================== [ End 1200x2400 Styles ] ====================== */
+
+
 #chartdiv {
     width: 100%;
     height: 500px;

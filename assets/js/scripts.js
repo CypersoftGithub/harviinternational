@@ -236,35 +236,44 @@ $(function() {
         },
     });
 
-    // Hero Image Slider
-    if ($('.hero-slider').length) {
-        // Wait for images to load
-        setTimeout(function() {
-            var heroSlider = new Swiper(".hero-slider", {
-                slidesPerView: 1,
-                spaceBetween: 0,
-                speed: 1500,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
-                pagination: {
-                    el: ".hero-slider .hero-slider-pagination",
-                    clickable: true,
-                    type: 'bullets',
-                },
-                navigation: {
-                    nextEl: '.hero-slider .hero-slider-next',
-                    prevEl: '.hero-slider .hero-slider-prev',
-                },
-            });
-        }, 100);
-    }
+     // Hero Image Slider
+     if ($('.hero-slider').length) {
+         // Wait for images to load
+         setTimeout(function() {
+             var heroSlider = new Swiper(".hero-slider", {
+                 slidesPerView: 1,
+                 spaceBetween: 0,
+                 speed: 1500,
+                 autoplay: {
+                     delay: 5000,
+                     disableOnInteraction: false,
+                     pauseOnMouseEnter: false,
+                 },
+                 loop: true,
+                 effect: 'fade',
+                 fadeEffect: {
+                     crossFade: true
+                 },
+                 pagination: {
+                     el: ".hero-slider .hero-slider-pagination",
+                     clickable: true,
+                     type: 'bullets',
+                 },
+                 navigation: {
+                     nextEl: '.hero-slider .hero-slider-next',
+                     prevEl: '.hero-slider .hero-slider-prev',
+                 },
+                 on: {
+                     init: function() {
+                         // Ensure autoplay starts
+                         if (this.autoplay) {
+                             this.autoplay.start();
+                         }
+                     }
+                 }
+             });
+         }, 100);
+     }
 
     var testim3 = new Swiper(".testim-style3 .testim-swiper", {
         effect: "cards",

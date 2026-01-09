@@ -245,7 +245,7 @@ $(function() {
                 spaceBetween: 0,
                 speed: 1500,
                 autoplay: {
-                    delay: 500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 },
                 loop: true,

@@ -303,7 +303,7 @@ $(function() {
         mousewheel: false,
         keyboard: true,
         autoplay: {
-            delay: 5000,
+            delay: 1000,
         },
         loop: false,
         breakpoints: {
